@@ -1,0 +1,325 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytonn</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="font/fonts/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="font/fonts/fonts.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bebas/css/bebas-neue.css"/>
+    <link rel="stylesheet" type="text/css" href="bebas/css/bebas-neue.min.css"/>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        body {
+            font-family: 'Proxima Nova', Georgia, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Menu starts here -->
+<div class="row">
+    <div style="background-color: #2B3A41;" class="off-canvas position-right" id="menus" data-off-canvas>
+        <span style="padding:7px;color: #ffffff;font-size: 27px;text-decoration: none;" data-close><i
+                class="fa fa-power-off"></i></span>
+        <ul class="vertical menu">
+            <li><a style="color:#ffffff;background-color: #000000;border-bottom: solid 4px #2B3A41;" href="#"><i
+                    class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;ABOUT US</a></li>
+            <li><a style="color:#ffffff;background-color: #000000;border-bottom: solid 4px #2B3A41;" href="#"><i
+                    class="fa fa-wrench" aria-hidden="true"></i>&nbsp;&nbsp;SERVICES</a></li>
+            <li><a style="color:#ffffff;background-color: #000000;border-bottom: solid 4px #2B3A41;" href="#"><i
+                    class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;PROJECTS</a></li>
+            <li><a style="color:#ffffff;background-color: #000000;border-bottom: solid 4px #2B3A41;" href="#"><i
+                    class="fa fa-group" aria-hidden="true"></i>&nbsp;&nbsp;OUR TEAM</a></li>
+            <li><a style="color:#ffffff;background-color: #000000;" href="#"><i class="fa fa-phone"
+                                                                                aria-hidden="true"></i>&nbsp;&nbsp;CONTACT
+                US</a></li>
+        </ul>
+        <div style="bottom: 0;position:absolute;padding-left:7px;"><img class="logo" src="img/logo.png"/></div>
+    </div>
+    <div class="small-12 columns">
+        <div class="header-unit" style="height:700px;">
+            <div class="small-12 columns" id="pad">
+                <div class="grid-x">
+                    <div class="medium-6 large-1 cell">
+                    </div>
+                    <div class="medium-6 large-10 cell">
+                        <div class="top-bar" id="example-menu" style="border-bottom: solid 1px #ffffff;">
+                            <div class="top-bar-left">
+                                <ul class="dropdown menu" data-dropdown-menu>
+                                    <li class="menu-tex"><img class="logo" src="img/logo.png"/></li>
+                                </ul>
+                            </div>
+                            <div class="top-bar-right">
+                                <ul class="menu">
+                                    <li style="font-family: 'Proxima Nova Regular', sans-serif;">Cytonn
+                                        Foundation&nbsp;
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li style="font-weight:bold;font-family: 'Proxima Nova Bold', sans-serif;">
+                                        &nbsp;Questions? Call Us: 0709101000
+                                    </li>
+                                    <li style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="mob"
+                                                                                                      style="color:#ffffff;cursor: pointer;"
+                                                                                                      data-toggle="menus">
+                                        <i class="fa fa-list" aria-hidden="true"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid-x" style="font-size:40px;padding-top:10%;text-align:left;color:#ffffff;">
+                            <div class="medium-6 large-4 cell" id="impush" style="">
+                                <img style="cursor: pointer;" onclick="tplayers()" id="players" src="img/play.svg"/>
+                            </div>
+                            <div class="medium-6 large-8 cell" style="text-align:left;float:right;">
+                                      <span id="banner" style="float:right;">
+                                          <span style="font-size:85px;line-height:90px;font-weight: bold;font-family: 'Bebas Neue', sans-serif;"
+                                                id="hdt">MAKE YOUR<br/>PRODUCT HAPPEN</span>
+                                            <br/><img width="70" src="img/dash.png"/>
+                                          <p id="dec"
+                                             style="line-height:27px;font-size: 21px;font-weight:400;font-family: 'Proxima Nova Regular', sans-serif;">We are full service digital product agency, <br/>delivering top-tier solutions for companies of all <br/>sizes.</p>
+                                      </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="video-container">
+                <video controls="controls" autoplay muted loop poster="img/back.jpg" id="videos" class="fillWidth">
+                    <source src="img/Back.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="small-12 columns" style="text-align:center;padding:50px;color:#0A0A0A;">
+        <h3 style="word-spacing: 1px;color:#f2f2f2f;font-family: 'Proxima Nova Regular', sans-serif;">We help young
+            Entrepreneurs to build-up their business</h3>
+        <p style="color:#808080;font-size:18px;font-family: 'Proxima Nova Regular', sans-serif;line-height:25px;margin-top:30px;margin-bottom:45px;">
+            Its a long established fact that a leader will be distracted by the readable content of a page hen looking
+            at its<br/>
+            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+            opposed to using<br/>
+            'Content here, content here', making it look like readable English.</p>
+        <a href="#" style="font-weight:bold;background-color: #92D047;padding-left:50px;padding-right:50px;"
+           class="foundation-button button">JOIN US IN MAKING THE DIFFERENCE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                aria-hidden="true" class="fa fa-long-arrow-right"/></i></a>
+    </div>
+    <div class="small-12 columns"
+         style="background-color:#f2f2f2;margin:0 auto;text-align:center;padding:65px;padding-bottom:40px;padding-top:30px;color:#0A0A0A;">
+        <p style="font-weight:bold;margin-bottom:45px;font-family: 'Proxima Nova Regular', sans-serif;"><i
+                class="fa fa-book" aria-hidden="true"></i>&nbsp;OUR PROGRAMS</p>
+        <div class="grid-x">
+            <div class="medium-6 large-4 cell" id="two">
+                <div style="position:relative;">
+                    <img class="mens" width="400px" src='img/1.jpg'/>
+                    <div class='bottomText'>
+                        <a href="#">
+                            <div class='botom'>
+                                <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;Entrepreneurship</span>
+                                <span style="color: #ffffff;float:right;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;<i
+                                        aria-hidden="true" class="fa fa-long-arrow-right"/></i>&nbsp;&nbsp;&nbsp;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='topText'>
+                        <div class='botom'>
+                            <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;our program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-6 large-4 cell" id="two">
+                <div style="position:relative;">
+                    <img class="mens" width="400px" src='img/2.jpg'/>
+                    <div class='bottomText'>
+                        <a href="#">
+                            <div class='botom'>
+                                <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;Training &amp; Mentorship</span>
+                                <span style="color: #ffffff;float:right;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;<i
+                                        aria-hidden="true" class="fa fa-long-arrow-right"/></i>&nbsp;&nbsp;&nbsp;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='topText'>
+                        <div class='botom'>
+                            <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;our program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-6 large-4 cell">
+                <div style="position:relative;">
+                    <img class="mens" width="400px" src='img/3.jpg'/>
+                    <div class='bottomText'>
+                        <a href="#">
+                            <div class='botom'>
+                                <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;Financial Literacy</span>
+                                <span style="color: #ffffff;float:right;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;<i
+                                        aria-hidden="true" class="fa fa-long-arrow-right"/></i>&nbsp;&nbsp;&nbsp;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='topText'>
+                        <div class='botom'>
+                            <span style="color: #ffffff;float:left;font-family: 'Proxima Nova Regular', sans-serif;">&nbsp;&nbsp;&nbsp;our program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-12 columns" style="background-color:#2B3A41;text-align:center;padding:40px;color:#0A0A0A;">
+        <div class="grid-x">
+            <div class="medium-6 large-6 cell">
+                <img width="600px" src="img/team.png">
+            </div>
+            <div class="medium-6 large-6 cell"
+                 style="float:right;color:#ffffff;text-align:left;padding-right:50px;padding-left:15px;">
+                <br/><br/>
+                <h3 style="font-family: 'Proxima Nova Regular', sans-serif;">Our Impact to the Society: creating a
+                    revolutionary mindset.</h3>
+                <p style="color:f2f2f2;font-family: 'Proxima Nova Regular', sans-serif;text-align: justify;font-size:17px;margin-top:50px;">
+                    To enhance the learning experience, Cytonn eHub will have weekly assignments,
+                    evaluations and mentorship sessions in addition to the class room training.
+                    Participants should be able to make a 12-week commitment and have the time to engage intensively int
+                    the
+                    programme. This is because training is very practical and hands on.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="small-12 columns"
+     style="text-align:center;padding-top:30px;padding-bottom:40px;padding-right:60px;padding-left:60px;color:#0A0A0A;">
+    <p style="font-weight:bold;font-family: 'Proxima Nova Regular', sans-serif;"><i class="fa fa-comments"
+                                                                                    aria-hidden="true"></i>&nbsp;TESTIMONIALS
+    </p>
+    <div class="grid-x" style="padding-top: 25px;">
+        <div class="medium-6 large-4 cell" id="two">
+            <div style="position:relative;">
+                <img width="400px" src='img/One.jpg'/>
+                <div class='bottomCenta'>
+                    <div class='botom'>
+                        <a data-open="vone"><img width="12%" style="cursor: pointer;" id="last"
+                                                 src="img/play.svg"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medium-6 large-4 cell" id="two">
+            <div style="position:relative;">
+                <img width="400px" src='img/Two.jpg'/>
+                <div class='bottomCenta'>
+                    <a href="#">
+                        <div class='botom'>
+                            <a data-open="vtwo"><img width="12%" style="cursor: pointer;" id="last"
+                                                     src="img/play.svg"/></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="medium-6 large-4 cell">
+            <div style="position:relative;">
+                <img width="400px" src='img/Three.jpg'/>
+                <div class='bottomCenta'>
+                    <a href="#">
+                        <div class='botom'>
+                            <a data-open="vthree"><img width="12%" style="cursor: pointer;" id="last"
+                                                       src="img/play.svg"/>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="small-12 columns" style="background-color:#2B3A41;text-align:center;padding:50px;color:#0A0A0A;">
+    <div class="grid-x">
+        <div class="medium-6 large-12 cell" style="color:#ffffff;">
+            <h3 style="font-family: 'Proxima Nova Regular', sans-serif;">Ready to get started?</h3>
+            <h2 style="font-weight: bold;font-family: 'Bebas Neue', sans-serif;">JOIN THE PROGRAM</h2>
+        </div>
+    </div>
+</div>
+<div class="small-12 columns" id="foot" style="text-align:center;padding:65px;color:#0A0A0A;">
+    <div class="small-12 columns" style="text-align:center;padding:20px;color:#0A0A0A;">
+        <div class="grid-x">
+            <div class="medium-6 large-6 cell" style="text-align: left;">
+                <h4 style="color:#919294;font-family: 'Proxima Nova Regular', sans-serif;">Sign Up to our
+                    Newsletter</h4>
+                <h5 style="color:#919294;font-family: 'Proxima Nova Regular', sans-serif;">foundation@cytonn.com</h5>
+            </div>
+            <div class="medium-6 large-4 cell" style="text-align: right;">
+                <input style="vertical-align: bottom;box-shadow:none;border-top: none;border-left: none;border-right: none;"
+                       type="email" required placeholder="example@emailaddress.com" aria-describedby="passwordHelpText">
+            </div>
+            <div class="medium-6 large-2 cell" style="text-align: right;">
+                <a href="#"
+                   style="font-weight:bold;font-family: 'Proxima Nova', sans-serif;background-color: #92D047;padding-right:60px;padding-left:60px;"
+                   class="foundation-button button">SIGN UP</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x" style="text-align: left;margin-bottom:20px;border-bottom: solid 1px #D7D8DA;"></div>
+    <div class="small-12 columns" style="text-align:center;padding:20px;color:#0A0A0A;">
+        <div class="grid-x">
+            <div class="medium-6 large-6 cell"
+                 style="color:#808080;font-family: 'Proxima Nova Regular', sans-serif;text-align: left;">
+                &copy; 2017 Formation, Inc. All rights reserved.
+            </div>
+            <div class="medium-6 large-6 cell" style="text-align: right;font-size: 28px;">
+                <a href="http://www.facebook.com/" target="_blank" style="color:#D7D8DA;"
+                   class="footer-foundation-icons soc"><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</a>
+                <a href="http://www.twitter.com/" target="_blank" style="color:#D7D8DA;" id="soc"
+                   class="footer-foundation-icons"><i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</a>
+                <a href="http://www.linkedin.com/" target="_blank" style="color:#D7D8DA;" id="soc"
+                   class="footer-foundation-icons"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</a>
+                <a href="http://www.yputube.com/" target="_blank" style="color:#D7D8DA;" id="soc"
+                   class="footer-foundation-icons"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Modals -->
+<div class="reveal" id="vone" data-reveal data-animation-in="reveal" data-animation-out="slide-out">
+    <iframe width="100%" height="345" frameborder="0"
+            src="https://www.youtube.com/embed/w4hETGru5VU?rel=0&amp;showinfo=0">
+    </iframe>
+
+    <button class="close-button" style="background-color: #ffffff;padding-bottom:4px;padding-left:7px;" data-close
+            aria-label="Close reveal" type="button">
+        <span aria-hidden="true"><i class="fa fa-power-off"></i></span>
+    </button>
+</div>
+<div class="reveal" id="vtwo" data-reveal data-animation-in="reveal" data-animation-out="slide-out">
+    <iframe width="100%" height="345" frameborder="0"
+            src="https://www.youtube.com/embed/kIlqZBd9qFw?rel=0&amp;showinfo=0">
+    </iframe>
+
+    <button class="close-button" style="background-color: #ffffff;padding-bottom:4px;padding-left:7px;" data-close
+            aria-label="Close reveal" type="button">
+        <span aria-hidden="true"><i class="fa fa-power-off"></i></span>
+    </button>
+</div>
+<div class="reveal" id="vthree" data-reveal data-animation-in="reveal" data-animation-out="slide-out">
+    <iframe width="100%" height="345" frameborder="0"
+            src="https://www.youtube.com/embed/fuS0V0uhjKQ?rel=0&amp;showinfo=0">
+    </iframe>
+
+    <button class="close-button" style="background-color: #ffffff;padding-bottom:4px;padding-left:7px;" data-close
+            aria-label="Close reveal" type="button">
+        <span aria-hidden="true"><i class="fa fa-power-off"></i></span>
+    </button>
+</div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/dist/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

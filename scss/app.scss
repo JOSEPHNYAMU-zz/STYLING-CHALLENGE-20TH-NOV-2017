@@ -1,0 +1,219 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+//@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.top-bar, #pad, .top-bar ul {
+  background: transparent !important;
+  padding-top: 0em;
+}
+
+.header-unit {
+  height: 415px;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+  background: url("img/back.png") repeat;
+}
+
+#video-container {
+  position: absolute;
+  z-index: -5;
+}
+
+#video-container {
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+}
+
+video.fillWidth {
+  width: 100%;
+}
+
+.menu {
+  color: #ffffff;
+}
+
+.logo {
+  height: 70px;
+  width: 200px;
+}
+
+#mens:hover {
+  opacity: 0.6;
+
+}
+
+#soc:hover {
+  color: #000000;
+
+}
+
+//Testimonials Css
+$hero-height: 33vh;
+$hero-width: 51vh;
+.hero-section {
+  background: url('../img/1.jpg') 50% no-repeat;
+  background-size: auto;
+  height: $hero-height;
+  //width: $hero-width;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+p.botom {
+  font-size: 20px;
+  bottom: 30%;
+}
+
+div.bottomCenta {
+  position: absolute;
+  bottom: 38%;
+  width: 100%;
+}
+
+#last:hover {
+  width: 16%;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+div.bottomText {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.topText {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body * {
+  font-family: proxima-nova, 'Proxima Nova', Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.mens:hover {
+  opacity: 0.6;
+  border: solid 1px #ffffff;
+}
+
+.soc:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  #two {
+    margin-bottom: 15px;
+  }
+  #players {
+    width: 13%;
+  }
+  .title-bar {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  #hdt {
+    font-size: 20px;
+  }
+  #vie {
+    display: none;
+  }
+  .menu {
+    float: right;
+  }
+  #banner {
+    background: #2B3A41;
+    padding: 20px;
+  }
+  #banner.span {
+    font-size: 20px;
+  }
+  #impush {
+    margin-bottom: 30px;
+  }
+  #dec {
+    font-size: 20px;
+  }
+  #foot {
+    padding: 7px;
+  }
+}
